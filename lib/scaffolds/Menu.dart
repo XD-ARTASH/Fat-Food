@@ -209,12 +209,12 @@ class _MenuState extends State<Menu> {
                     child: SingleChildScrollView(
                       child: Column(
                         children: [
-                          Restaurant(logo: 'Assets/Images/KFC.png', cont: Colors.red, tex: Colors.white, hour: dt.hour, imageOne: 'Assets/Images/five.png', nameOne: 'Five piece wings', priceOne: 6, imageTwo: 'Assets/Images/twister.png', nameTwo: 'Twister', priceTwo: 3, imageThree: 'Assets/Images/burger.png', nameThree: 'Dynamite burger', priceThree: 5, imageFour: 'Assets/Images/tender.png', nameFour: 'Five piece chicken tenders', priceFour: 5, imageFive: 'Assets/Images/bucket.png', nameFive: 'Fifteen piece bucket', priceFive: 20, discountFive: 20, discTimeFive: 19,),
+                          Restaurant(logo: 'Assets/Images/KFC.png', cont: Colors.red, tex: Colors.white, hour: dt.hour, images: ['Assets/Images/five.png', 'Assets/Images/twister.png', 'Assets/Images/burger.png', 'Assets/Images/tender.png', 'Assets/Images/bucket.png'], names: ['Five piece wings', 'Twister', 'Dynamite burger', 'Five piece chicken tenders', 'Fifteen piece bucket'], prices: [6, 3, 5, 5, 20], discounts: [0, 0, 0, 0, 20], discTimes: [100, 100, 100, 100, 19],),
                           Padding(
                             padding: const EdgeInsets.only(top: 25, right: 18, left: 18),
                             child: Divider(color: Colors.black, thickness: 5,),
                           ),
-                          Restaurant(logo: 'Assets/Images/mcdonalds.png', cont: Colors.red, tex: Colors.yellowAccent, hour: dt.hour, imageOne: 'Assets/Images/mac.png', nameOne: 'Big Mac', priceOne: 5.50, imageTwo: 'Assets/Images/chMac.png', nameTwo: 'Chicken Big Mac', priceTwo: 5.50, imageThree: 'Assets/Images/nuggets.png', nameThree: 'chicken McNuggets', priceThree: 4.50, imageFour: 'Assets/Images/spicy.png', nameFour: 'Spicy McChicken', priceFour: 5, imageFive: 'Assets/Images/double.png', nameFive: 'Double Quarter Pounder', priceFive: 7,),
+                          Restaurant(logo: 'Assets/Images/mcdonalds.png', cont: Color(0xFFF5BF2F), tex: Color(0xFFCE3527), hour: dt.hour, images: ['Assets/Images/mac.png', 'Assets/Images/chMac.png', 'Assets/Images/nuggets.png', 'Assets/Images/spicy.png', 'Assets/Images/double.png'], names: ['Big Mac', 'Chicken Big Mac', 'chicken McNuggets', 'Spicy McChicken', 'Double Quarter Pounder'], prices: [5.50, 5.50, 4.50, 5, 7],),
                         ],
                       ),
                     ),
